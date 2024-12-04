@@ -1,0 +1,400 @@
+
+p,
+.a-CTA,
+input,
+.copyright li,
+.contact .form form label,
+.contact .form form button {
+    font-family: Cabin, sans-serif;
+}
+
+.fa-asterisk,
+.a-CTA,
+h2,
+.copyright .info li a,
+.copyright .CTA li a:hover {
+    color: #a96700;
+}
+
+header .text .button button:hover,
+.contact .form form button:hover,
+.contact .text i:hover {
+    background-color: #a96700;
+}
+
+header .text,
+.about-us .text,
+.reservation .text,
+.menu .box-model,
+.menu .text,
+.fixed-image .text,
+.copyright,
+.contact .text i {
+    text-align: center;
+}
+
+.about-us,
+.reservation,
+.about-us .image-container,
+.reservation .image-container,
+.menu,
+.menu .menu-image-container,
+.copyright ul,
+.contact {
+    display: flex;
+}
+
+.menu .box-model .close,
+.copyright .CTA li a {
+    transition: .3s;
+}
+
+header,
+header .text,
+header .text .arrow .left,
+header .text .arrow .right,
+.recipes,
+.menu .box-image-container,
+.fixed-image .text,
+.copyright,
+.copyright .arrow-up {
+    position: relative;
+}
+
+header .text .arrow .left:after,
+header .text .arrow .right:after,
+header .svg-down,
+header .arrow-down,
+.recipes .text,
+.menu .box-model .close,
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left,
+.menu .box-image-container .box-image,
+.copyright .svg-up {
+    position: absolute;
+}
+
+.recipes .text,
+.fixed-image .text,
+.menu .box-image-container,
+.menu .box-image-container .box-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu .box-model,
+.menu .box-image-container,
+.menu .box-image-container .box-image {
+    width: 100%;
+}
+
+button,
+.dots>div,
+header .arrow-down,
+.menu .box-model .close,
+.menu .box-model .arrow .arrow-right,
+.menu .box-model .arrow .arrow-left,
+.menu .menu-image-container .image img,
+.copyright .arrow-up {
+    cursor: pointer;
+}
+
+.dots .active,
+header .text .arrow .left,
+header .text .arrow .right,
+header .text .button button,
+.contact form button {
+    background-color: #fff;
+}
+
+h1,
+h3,
+header .text span,
+.menu .box-model .close:hover,
+.contact .text i,
+.contact .form form button {
+    color: #fff;
+}
+
+header .text .arrow .left:after,
+.menu .box-model,
+.copyright .arrow-up {
+    left: 0;
+}
+
+header .text .arrow .left:after,
+header .text .arrow .right:after,
+header .text span,
+.copyright .arrow-up,
+.contact .text i,
+.contact .form form label {
+    display: inline-block;
+}
+
+header {
+    height: calc(100vh - 22px);
+    background-size: cover;
+    background: url("../img/img29.jpg") fixed bottom;
+
+}
+
+header .text {
+    top: 24%;
+}
+
+header .text h1 {
+    margin-bottom: 0;
+}
+
+header .text span {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+header .text .button button {
+    border: none;
+    padding: 9px 18px;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-family: source_sans_problack, sans-serif;
+    border-radius: 3px;
+}
+
+header .text .button button {
+    outline: none;
+}
+
+.text h2 {
+
+    background: linear-gradient(90deg, white, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+
+#justend {
+    margin-top: 1000px;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, gold, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    /* Dark color for readability */
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+
+.tab-content {
+    background-color: #444;
+    /* Content background */
+    color: #fff;
+    /* Content text color */
+    padding: 20px;
+    border-top: none;
+}
+
+/* Center the tabs and style for responsiveness */
+.container {
+    max-width: 100%;
+}
+
+
+.tab-content {
+    background-color: #131a97;
+    /* Content background */
+    color: #fff;
+    /* Content text color */
+    padding: 20px;
+    border: 1px solid #a96700;
+    border-top: none;
+}
+
+.container1 .nav-link:hover {
+    color: #ffb338;
+    /* Change this to your desired hover text color */
+    background-color: transparent;
+    /* Ensure background stays the same */
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 250px;
+    /* Fixed height for images */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.video-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.video-item {
+    flex: 1;
+    max-width: 90%;
+}
+
+video {
+    width: 130vh;
+    /* Full width for videos */
+    height: 400px;
+    /* Fixed height for videos */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    margin-left: 20px;
+}
+
+
+
+.mb-3 a {
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* Change text color to white */
+}
+
+.fa-brands {
+    padding: 20px;
+    font-size: x-large;
+}
+
+#whatsapp {
+    padding: 0;
+}
+
+.mb-3 a:hover {
+    color: rgb(224, 222, 222);
+    /* Change text color on hover */
+}
+
+.font-weight-normal tr td {
+    font-size: large;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media (max-width: 700px) {
+    header {
+        height: calc(100vh - 10px);
+    }
+
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .text h2 {
+        font-size: 40px;
+    }
+
+
+    .tab-content {
+        padding: 5px;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on medium screens */
+    }
+
+    .video-container {
+        flex-direction: column;
+        /* Stack videos on small screens */
+    }
+
+    .video-item {
+        max-width: none;
+        /* Remove max-width to fit full screen */
+    }
+
+    .video-item video {
+        height: 400px;
+        /* Maintain aspect ratio */
+    }
+
+    video {
+        width: 100%;
+        /* Full width for videos */
+        height: auto;
+        /* Maintain aspect ratio */
+        max-width: 90%;
+        /* Optional: Set a maximum width */
+        margin-left: auto;
+        /* Center align */
+        margin-right: auto;
+        /* Center align */
+    }
+
+}
