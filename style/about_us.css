@@ -5,8 +5,8 @@
 
 body {
     margin: 0;
-    padding: 12px;
 
+    
 }
 
 body.hide-scroll::-webkit-scrollbar {
@@ -28,12 +28,6 @@ img {
     max-width: 100%;
 }
 
-h2 {
-    font-size: 100px;
-    font-weight: normal;
-    margin: 0 0 -55px;
-    /* previous font type  'Herr Von Muellerhoff', cursive*/
-}
 
 h1, h3 {
     font-family: "Source Code Pro", sans-serif;
@@ -55,8 +49,6 @@ p {
     font-size: 18px;
 }
 
-/*End Global*/
-/*Start Mutual*/
 p,
 .a-CTA,
 input,
@@ -69,13 +61,17 @@ input,
 .fa-asterisk,
 .a-CTA,
 h2 {
-    color: #000000;
-    background-color: #ccc;
+    color: #7cc3e7;
     box-shadow: white;
     text-wrap:wrap;
     
 }
-
+h2 {
+    font-size: 5rem !important;
+    font-weight: normal;
+    margin: 0 0 -55px;
+    /* previous font type  'Herr Von Muellerhoff', cursive*/
+}
 .contact .text i:hover {
     background-color: #ffffff;
 }
@@ -1114,7 +1110,7 @@ header .arrow-down {
     }
 
     h2 {
-        font-size: 90px
+        font-size: 3rem !important;
     }
 
     header {
@@ -1129,4 +1125,3 @@ header .arrow-down {
         padding: 60px 0 60px 20px;
     }
 }
-

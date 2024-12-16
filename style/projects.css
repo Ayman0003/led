@@ -13,13 +13,13 @@ input,
 h2,
 .copyright .info li a,
 .copyright .CTA li a:hover {
-    color: #a96700;
+    color: #3cc1ff;
 }
 
 header .text .button button:hover,
 .contact .form form button:hover,
 .contact .text i:hover {
-    background-color: #a96700;
+    background-color: #3cc1ff;
 }
 
 header .text,
@@ -226,15 +226,73 @@ header .text .button button {
     color: #fff;
     /* Content text color */
     padding: 20px;
-    border: 1px solid #a96700;
+    border: 1px solid #3cc1ff;
     border-top: none;
 }
 
 .container1 .nav-link:hover {
-    color: #ffb338;
+    color: #ffffff;
     /* Change this to your desired hover text color */
     background-color: transparent;
     /* Ensure background stays the same */
+}
+/* Base Styling */
+.nav-tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs horizontally */
+    flex-wrap: wrap; /* Ensure tabs wrap on smaller screens */
+    border-bottom: 2px solid #ddd; /* Add a bottom border */
+    padding: 0;
+    margin: 0 auto; /* Center the nav container */
+    list-style: none; /* Remove default list styling */
+}
+
+.nav-tabs .nav-item {
+    margin: 10px 45px; /* Add spacing between tabs */
+}
+
+.nav-tabs .nav-link {
+    font-size: 1rem; /* Adjust text size */
+    padding: 10px 20px; /* Add padding for better touch areas */
+    border: 1px solid transparent;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #d0d1d1 !important; /* Light background */
+    color: #007bff !important; /* Primary color for text */
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #007bff !important; /* Hover background */
+    color: #fff !important; /* Hover text color */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff !important; /* Active tab background */
+    color: #fff !important; /* Active tab text color */
+    border-color: #007bff !important; /* Border for active tab */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-tabs .nav-link {
+        font-size: 0.5rem; /* Slightly smaller text */
+        padding: 6px 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-tabs {
+        flex-direction: row; /* Stack tabs vertically */
+        align-items: center; /* Center tabs in column */
+    }
+
+    .nav-tabs .nav-item {
+        
+        margin: 5px 0.3rem; /* Vertical spacing */
+    }
+
 }
 
 .photo-grid {
@@ -293,7 +351,7 @@ video {
 }
 
 .fa-brands {
-    padding: 20px;
+    padding: 0x;
     font-size: x-large;
 }
 

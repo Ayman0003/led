@@ -76,29 +76,28 @@
       color: #b8b8b8;
   }
 
+
   #img2-container {
-      margin: 30px 0 0 100px;
-      width: 90%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between images */
+    margin-top: 80px;
+}
 
-  }
+#img2-container img {
+    width: 27%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-  #img2-container img {
-
-      width: 27%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: all ease-in-out 0.5s;
-  }
 
   #img2-container img:hover {
       transform: scale(1.03);
-      width: 35%;
+      width: 30%;
 
   }
 
@@ -252,21 +251,21 @@
   }
 
   .pane-left {
-      width: 35%;
+      width: 30%;
       height: 40rem;
       z-index: 2;
   }
 
 
   .pane-mid {
-      width: 30%;
+      width: 40%;
       height: 40rem;
-      background-color: #949494;
+      background-color: #050A30;
       z-index: 1;
   }
 
   .pane-right {
-      width: 35%;
+      width: 30%;
       height: 40rem;
   }
 
@@ -304,15 +303,7 @@
 
 
   @media (max-width: 700px) {
-      .column1 {
-          width: 38%;
-          height: 150px;
-          margin-left: 10px;
-      }
 
-      #row1 {
-          margin-top: 20px;
-      }
 
       #home {
           background-position: center;
@@ -407,6 +398,8 @@
           object-fit: cover;
           border-radius: 5px;
           transition: all ease-in-out 0.5s;
+          margin-left: 0;
+          margin-right: 0;
 
       }
 
@@ -420,7 +413,7 @@
 
       .pane-title {
           width: 100%;
-          font-size: 0.55rem;
+          font-size: 0.8rem;
           font-family: "Playfair Display", serif;
           color: #ffffff;
       }
@@ -429,33 +422,56 @@
           width: 100%;
           overflow: hidden;
           text-align: justify;
-          font-size: 0.46rem;
-          margin-top: 2rem;
+          font-size: 0.58rem;
+          margin-top: 1rem;
+          font-weight: bold;
       }
 
       .pane-mid {
-          width: 30%;
-          height: 20rem;
-          background-color: #949494;
+          width: 40%;
+          height: 17rem;
           z-index: 1;
       }
 
       .pane-right {
-          height: 20rem;
+          height: 17rem;
       }
 
       .pane-left {
-          height: 20rem;
+          height: 17rem;
           z-index: 1;
       }
 
       .pane img {
           width: 100%;
           display: block;
-          height: 20rem;
+          height: 17rem;
       }
 
       #triple-pane {
           margin-top: 5rem;
       }
-  }
+ 
+    .row1 {
+        display: flex;
+        justify-content: space-between; /* Ensures equal spacing between images */
+        gap: 0.5rem; /* Adds the required gap */
+        margin-left: 0.5rem; /* Adjust margin for alignment */
+        margin-top: 1rem; /* Optional: Adjust vertical spacing */
+    }
+
+    .column1 {
+        width: 48%; /* Each image takes approximately half the width */
+        padding: 0; /* Remove extra padding */
+        height: auto; /* Adjusts height automatically */
+        margin-left: 0; /* Ensures no extra margin */
+        margin-right: 0; /* Ensures no extra margin */
+        background: none; /* Optional: Remove the gradient background for simpler styling */
+    }
+
+    .column1 img {
+        width: 100%; /* Image fills the container width */
+        height: 100%; /* Maintain aspect ratio */
+        border-radius: 0.5rem; /* Keep some styling for rounded corners */
+    }
+}

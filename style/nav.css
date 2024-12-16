@@ -1,54 +1,50 @@
-body {
-    background: #1f2253 !important;
-    margin: 0;
-    
-}
+/* Global Reset and Base Styles */
 * {
     box-sizing: border-box;
-  }
-  
-   
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0000FF !important;
+    margin: 0;
+}
+
+/* Scrollmenu Styling */
 div.scrollmenu {
-    background-color: #121546 ;
+    background-color: #000C66;
     overflow: auto;
     white-space: nowrap;
-    gap: 100px;
     display: flex;
+    gap: 1rem;
     font-size: large;
     font-weight: bold;
     justify-content: center; /* Centers content horizontally */
-    align-items: center;   /* Centers content vertically */
+    align-items: center; /* Centers content vertically */
+}
 
-  }
-  
 div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px;
     text-decoration: none;
-  }
-  
+}
+
 div.scrollmenu a:hover {
-    background-color: #242ddd ;
-  }
-
-
-
-
-
-
+    background-color: #242ddd;
+}
 
 /* Footer Styling */
 footer {
-    background: #191b42 !important;
+    background: #000C66 !important;
     color: #ddd;
     padding: 2rem 0;
     font-size: 1rem;
     margin-top: 2rem;
 }
 
-footer h5 {
+footer h3 {
     color: #f8f9fa;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -59,116 +55,67 @@ footer p {
     line-height: 1.5;
 }
 
-/* Footer Links Styling */
-footer a {
-    color: #87CEEB; /* Baby blue color */
-    text-decoration: none;
-    transition: color 0.3s ease;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* No space between icons */
 }
 
-footer a:hover {
-    color: #fff;
-}
-
-footer .fa-li {
-    color: #87CEEB; /* Baby blue color */
-}
-
-/* Social Icons Styling */
-footer .social-icons a {
-    font-size: 3.5rem; /* Larger icon size for social icons */
-    margin-right: 2rem; /* Adjusted spacing between icons */
-    color: #f8f9fa; /* Default color for icons */
-    transition: transform 0.3s ease, color 0.3s ease;
-    display: inline-block;
-}
-
-footer .social-icons a:last-child {
-    margin-right: 0; /* Remove margin for the last icon */
-}
-
-footer .social-icons a:hover {
-    color: #87CEEB; /* Baby blue hover effect */
-    transform: scale(1.3); /* Slight zoom on hover */
-}
-
-/* Footer Table Styling */
-footer table {
-    width: 100%;
-    text-align: center;
-}
-
-footer table td {
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem;
+    font-size: x-large;
+    text-decoration: none;
+    color: inherit;
 }
 
-.fa-brands {
-    padding: 2rem;
-    font-size:x-large;
-
-}
-.fa-whatsapp{
-    padding: 0rem;
-}
-.fas{
-    font-size:x-large;
-}
-.mb-3{
-    margin-top: 2rem;
-    margin-left: 4rem;
-}
-.table{
-    margin-top: 4rem;
-}
-@media (min-width: 992px) {
-    footer .row > div {
-        flex: 0 0 50%; /* 50% width */
-        max-width: 50%; /* Enforce 50% max width */
-    }
-    
+.fa-brands, .fa-envelope {
+    font-size: x-large;
 }
 
 /* Responsive Design */
-
 @media (max-width: 700px) {
     div.scrollmenu {
-        position: fixed;
-        z-index: 2;
         width: 100%;
-        background-color: #121546 ;
         overflow: auto;
         white-space: nowrap;
-        gap: 0.5rem;
-        font-size:x-small;
+        gap: 0.2rem;
+        font-size: x-small;
         display: flex;
-        justify-content: center; /* Centers content horizontally */
-        align-items: center;   /* Centers content vertically */
+        justify-content: center;
+        align-items: center;
         top: 1px;
-      }
-
-
-      footer .row > div {
-        margin-bottom: 2rem;
     }
 
-    footer .social-icons a {
-        font-size: 3rem; /* Slightly smaller icons on smaller screens */
-        margin-right: 1.5rem; /* Adjusted spacing */
-    }
-    .active{
+    .active {
         background-color: #242ddd;
     }
+
     footer {
         background-color: #1e1ec2;
         color: #ddd;
-        padding: 2rem 0;
+        padding: 0rem 0;
         font-size: 0.9rem;
     }
-    .mb-3{
-        margin-top: 0.5rem;
-        margin-left: 0rem;
+
+    .social-icons {
+        gap: 0; /* No space between icons */
     }
-    .table{
-        margin-top: 0.4rem;
+
+    .social-icons a {
+        flex: 1; /* Ensure all icons share equal space */
+    }
+}
+
+@media (min-width: 992px) { /* Laptop screen size and larger */
+    .social-icons {
+        display: flex;
+        gap: 0.5rem; /* Slight spacing between icons */
+    }
+
+    .social-icons a {
+        font-size: x-large;
     }
 }
