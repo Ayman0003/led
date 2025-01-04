@@ -141,7 +141,7 @@ nav {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #39FF14;
+  color: rgba(5, 236, 248, 0.863);
   transition: color 0.3s;
 }
 

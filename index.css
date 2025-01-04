@@ -45,7 +45,7 @@
   #main1 {
 
       text-align: center;
-      margin: 0 auto;
+      margin:  auto;
       margin-top: 30px;
 
   }
@@ -375,6 +375,11 @@ margin-top: 5rem; }
 
       .main1 p {
           font-size: small;
+          text-align: justify;
+          margin: auto;
+          max-width: fit-content;
+          line-height:normal;
+          
       }
 
       #img2-container {
@@ -474,5 +479,63 @@ margin-top: 5rem; }
         width: 100%; /* Image fills the container width */
         height: 100%; /* Maintain aspect ratio */
         border-radius: 0.5rem; /* Keep some styling for rounded corners */
+    }
+}
+
+
+
+
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+/* Background Section */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #4c1d95, #1e40af); /* Luxurious gradient */
+    color: #fff; /* Ensure contrast */
+}
+
+/* Paragraph Styling */
+p {
+    font-family: 'Roboto', sans-serif; /* Modern and readable font */
+    font-size: 1.1rem; /* Slightly larger for readability */
+    line-height: 1.8; /* Adjust line spacing */
+    text-align: justify; /* Clean block alignment */
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 700px; /* Prevent overly long lines */
+    color: #e0e0e0; /* Softer white for text */
+}
+
+/* Highlight Key Words */
+p strong {
+    font-family: 'Playfair Display', serif; /* Luxurious serif font for emphasis */
+    font-size: 1.2rem; /* Slightly larger */
+    font-weight: 700; /* Bold emphasis */
+    color: #f9d71c; /* Gold-like color for luxury */
+}
+
+/* Heading Styling */
+h2 {
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
+    font-size: 2.5rem; /* Large and impactful */
+    color: #fefefe; /* Bright white for contrast */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem; /* Adjust for smaller screens */
+        line-height: 1.6; /* Slightly reduced spacing */
+    }
+
+    h2 {
+        font-size: 2rem; /* Scale down heading */
     }
 }
