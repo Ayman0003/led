@@ -1,0 +1,478 @@
+  /* Container for the logo and text */
+  .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      /* Allows positioning of text over the logo */
+      background-color: #1d1d1d;
+  }
+
+  /* Text to display above the logo */
+  .logo-text {
+      position: absolute;
+      /* Positioned over the logo */
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      top: 20%;
+      /* Adjust as needed */
+      z-index: 1;
+      /* Ensures text is above the logo */
+      background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)) !important;
+      /* Define the gradient from white to gold */
+      -webkit-background-clip: text !important;
+      /* Make the gradient clip to the text */
+      color: transparent !important;
+  }
+
+  /* Styling for the logo image */
+  .img-fluid {
+      height: 500px !important;
+      width: 1500px;
+      opacity: 1;
+      /* Initial logo transparency */
+      transition: opacity 0.4s ease;
+      /* Smooth transition for opacity */
+  }
+
+  /* Styling for main headings and paragraphs */
+  h1, p {
+      color: aliceblue;
+  }
+
+  /* Add margin to the top of the main content to prevent overlap */
+  #main1 {
+
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
+
+  }
+
+  .main1txt {
+      margin: 5px;
+      background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255)) !important;
+      /* Define the gradient from white to gold */
+      -webkit-background-clip: text !important;
+      /* Make the gradient clip to the text */
+      color: transparent !important;
+  }
+
+  .main1txt h1 {
+      font-size: xx-large;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: bolder;
+  }
+
+  .main1txt h1 {
+      font-size: large;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: bolder;
+  }
+ #main1{
+margin-top: 5rem; }
+  .logo-text {
+
+      color: #b8b8b8;
+  }
+
+
+  #img2-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between images */
+    margin-top: 80px;
+}
+
+#img2-container img {
+    width: 27%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+  #img2-container img:hover {
+      transform: scale(1.03);
+      width: 30%;
+
+  }
+
+  #img2 {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      margin-left: 0;
+      flex: none;
+  }
+
+
+
+  #home {
+      position: relative;
+      height: 500px;
+      margin: 0 auto;
+      width: 99%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 30px;
+  }
+
+  .video-container {
+      display: flex;
+      justify-content: center;
+      /* Centers content horizontally */
+      align-items: center;
+      /* Centers content vertically */
+      gap: 10px;
+      /* Adds spacing between the videos */
+      width: 100%;
+      height: 100%;
+  }
+
+  .background-video {
+      width: auto;
+      /* Adjusts width proportionally */
+      width: 43%;
+      /* Prevents videos from being too large */
+      height: 100%;
+      /* Ensures the videos fill the height of the container */
+      object-fit: cover;
+      /* Keeps aspect ratio intact */
+      border-radius: 10px;
+  }
+
+  #video2 {
+      margin-left: 1%;
+  }
+
+  .hometxt {
+      border-radius: 10px;
+      padding: 10px;
+      margin: 40px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black background with 0.5 opacity */
+      color: #ffffff;
+      position: relative;
+      /* Ensures the text appears above the video */
+      z-index: 1;
+      display: none;
+  }
+
+
+  .row1 {
+      margin-top: 20px;
+      margin-left: 50px;
+
+  }
+
+  .column1 {
+      float: left;
+      width: 43%;
+      padding: 3px;
+      height: 350px;
+      /* Should be removed. Only for demonstration */
+      background: linear-gradient(to right, rgb(169, 168, 218), rgba(78, 5, 248, 0.863)) !important;
+      /* Define the gradient from white to gold */
+      margin-left: 50px;
+      border-radius: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row1:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .column1 img {
+      width: 100%;
+      /* Make image fill the width of the container */
+      height: 100%;
+      /* Make image fill the height of the container */
+      object-fit: cover;
+      /* Cover the container while maintaining aspect ratio */
+      display: block;
+      /* Prevents any extra space at the bottom of the image */
+      border-radius: 25px;
+  }
+
+  #row1 {
+      margin-top: 100px;
+  }
+
+  .mt-4 a {
+      padding: 10px;
+      font-size: larger;
+  }
+
+  .mb-3 {
+      margin-top: 2.3rem;
+  }
+
+  .mb-3 a {
+      text-decoration: none;
+      /* Remove underline */
+      color: white;
+      /* Change text color to white */
+
+  }
+
+  .mb-3 a:hover {
+
+      color: rgb(224, 222, 222);
+      /* Change text color to white */
+
+  }
+
+  .font-weight-normal tr td {
+
+      font-size: large;
+  }
+
+  #triple-pane {
+      width: 100%;
+      max-width: 1400px;
+      max-height: calc(1400px * (9 / 16));
+      height: 56.25vw;
+      display: flex;
+      align-items: center;
+      margin: auto;
+  }
+
+  #triple-pane>* {
+      box-sizing: border-box;
+  }
+
+  .pane-left {
+      width: 30%;
+      height: 40rem;
+      z-index: 2;
+  }
+
+
+  .pane-mid {
+      width: 40%;
+      height: 40rem;
+      background-color: #1e234e;
+      z-index: 1;
+  }
+
+  .pane-right {
+      width: 30%;
+      height: 40rem;
+  }
+
+  .pane img {
+      width: 100%;
+      display: block;
+      height: 40rem;
+  }
+
+  .pane-content {
+      width: 100%;
+      height: 40rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      font-family: "Crimson Text", serif;
+  }
+
+  .pane-title {
+      width: 100%;
+      font-size: 2.7rem;
+      font-family: "Playfair Display", serif;
+      color: #ffffff;
+  }
+
+  .pane-text {
+      width: 100%;
+      overflow: hidden;
+      text-align: justify;
+      font-size: 1.7rem;
+  }
+
+
+  @media (max-width: 700px) {
+
+
+      #home {
+          background-position: center;
+          background-size: cover;
+          height: 80%;
+          /* Adjust the height for smaller screens */
+          margin: 0 auto;
+          width: 99%;
+          /* Adjust the width to be more fitting for smaller screens */
+          margin-top: 8rem;
+      }
+
+      .video-container {
+          display: block;
+      }
+
+      #video2 {
+          display: none;
+      }
+
+      #video3 {
+          display: none;
+      }
+
+      .background-video {
+          margin-left: 5%;
+          width: 90%;
+          /* One video will take the entire width on small screens */
+          height: auto;
+      }
+
+      .hometxt {
+          display: flex;
+      }
+
+      #img2 {
+          height: 300px;
+      }
+
+      .logo-text {
+          position: absolute;
+          /* Position the text relative to its container */
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          top: 23%;
+          /* Adjust the vertical position */
+          left: 20%;
+          /* Start from the horizontal center */
+          transform: translateX(-10%);
+          /* Center the text horizontally */
+          z-index: 1;
+          /* Ensure the text is above the image */
+      }
+
+      .logo-container {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          display: block;
+      }
+
+      .img-fluid {
+          height: 300px !important;
+      }
+
+      .main1 p {
+          font-size: small;
+      }
+
+      #img2-container {
+          margin: 30px 0 0 15px;
+          width: 75%;
+          height: 250px;
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          margin-top: 3rem;
+          margin-left: 3rem !important;
+      }
+
+      #img21 {
+          display: none;
+      }
+
+      #img2-container img {
+
+          width: 40%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+          transition: all ease-in-out 0.5s;
+          margin-left: 0;
+          margin-right: 0;
+
+      }
+
+      #img2-container img:hover {
+          width: 50%;
+      }
+
+      .mb-3 {
+          margin-top: 0.3rem;
+      }
+
+      .pane-title {
+          width: 100%;
+          font-size: 0.8rem;
+          font-family: "Playfair Display", serif;
+          color: #ffffff;
+      }
+
+      .pane-text {
+          width: 100%;
+          overflow: hidden;
+          text-align: justify;
+          font-size: 0.5rem;
+          margin-top: 1rem;
+          font-weight: bold;
+      }
+
+      .pane-mid {
+          width: 40%;
+          height: 17rem;
+          z-index: 1;
+      }
+
+      .pane-right {
+          height: 17rem;
+      }
+
+      .pane-left {
+          height: 17rem;
+          z-index: 1;
+      }
+
+      .pane img {
+          width: 100%;
+          display: block;
+          height: 17rem;
+      }
+
+      #triple-pane {
+          margin-top: 5rem;
+      }
+ 
+    .row1 {
+        display: flex;
+        justify-content: space-between; /* Ensures equal spacing between images */
+        gap: 0.5rem; /* Adds the required gap */
+        margin-left: 0.5rem; /* Adjust margin for alignment */
+        margin-top: 1rem; /* Optional: Adjust vertical spacing */
+    }
+
+    .column1 {
+        width: 48%; /* Each image takes approximately half the width */
+        padding: 0; /* Remove extra padding */
+        height: auto; /* Adjusts height automatically */
+        margin-left: 0; /* Ensures no extra margin */
+        margin-right: 0; /* Ensures no extra margin */
+        background: none; /* Optional: Remove the gradient background for simpler styling */
+    }
+
+    .column1 img {
+        width: 100%; /* Image fills the container width */
+        height: 100%; /* Maintain aspect ratio */
+        border-radius: 0.5rem; /* Keep some styling for rounded corners */
+    }
+}
