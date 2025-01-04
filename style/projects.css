@@ -278,7 +278,7 @@ header .text .button button {
 @media (max-width: 768px) {
     .nav-tabs .nav-link {
         font-size: 0.5rem; /* Slightly smaller text */
-        padding: 6px 10px; /* Adjust padding */
+        padding: 6px 5px; /* Adjust padding */
     }
 }
 

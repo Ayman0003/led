@@ -159,6 +159,14 @@ section {
     text-decoration: none;
 
 }
+ .fa-envelope{
+  position:relative;
+  margin-top: 2rem;
+}
+.fa-solid{
+  position:relative;
+  margin-top:2.3rem; 
+}
 @media (max-width: 991px) {
   section {
     padding-top: 50px;

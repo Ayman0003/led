@@ -757,7 +757,7 @@ header .text span,
 header {
     height: calc(70vh - 22px);
     background-size: cover;
-    background: url("../img/img71.jpg") fixed ;
+    background: url("../img/image0_0.jpg") fixed ;
     padding: 20px 70px;
 }
 
@@ -809,7 +809,7 @@ header .text span {
 header .svg-down {
     bottom: 0;
     left: 50%;
-    z-index: 5;
+    z-index: 3;
     margin-left: -96px;
     margin-bottom: -12px;
     color: #fff;
@@ -821,7 +821,7 @@ header .arrow-down {
     bottom: -10px;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 10;
+    z-index: 4;
     background: url("../img/img7.jpg") no-repeat center;
 }
 
@@ -858,7 +858,7 @@ header .arrow-down {
 /*Start Recipes*/
 .recipes .image {
     height: 350px;
-    background: url("../img/img7.jpg") fixed center;
+    background: url("../img/img69.jpg") fixed center;
     background-size: cover;
 }
 
@@ -955,7 +955,7 @@ header .arrow-down {
 
 /*Start fixed-image*/
 .fixed-image {
-    background: url("../img/img4.jpg") fixed center;
+    background: url("../img/img11.jpg") fixed center;
     background-size: cover;
     height: 400px;
 }

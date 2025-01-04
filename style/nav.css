@@ -5,14 +5,19 @@
     padding: 0;
 }
 
+
+
 body {
-    background-color: #0000FF !important;
-    margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #007BFF, #FF007F);
+  color: #FFFFFF;
+  margin: 0;
+
 }
 
 /* Scrollmenu Styling */
 div.scrollmenu {
-    background-color: #000C66;
+    background-color: #FF007F;
     overflow: auto;
     white-space: nowrap;
     display: flex;
@@ -22,27 +27,16 @@ div.scrollmenu {
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
 }
-
-div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-    background-color: #242ddd;
-}
-
-/* Footer Styling */
 footer {
-    background: #000C66 !important;
+    background: #2E2E2E !important;
     color: #ddd;
     padding: 2rem 0;
     font-size: 1rem;
     margin-top: 2rem;
 }
+
+/* Footer Styling */
+
 
 footer h3 {
     color: #f8f9fa;
@@ -90,11 +84,10 @@ footer p {
     }
 
     .active {
-        background-color: #242ddd;
+        background-color: #e10372;
     }
 
     footer {
-        background-color: #1e1ec2;
         color: #ddd;
         padding: 0rem 0;
         font-size: 0.9rem;
@@ -118,4 +111,79 @@ footer p {
     .social-icons a {
         font-size: x-large;
     }
+}
+
+/* Base Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  position: absolute;
+  
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #39FF14;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FF007F;
+}
+
+/* Hamburger Menu for Small Screens */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust for header height */
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  nav a {
+    margin: 10px 0;
+    color: #FFFFFF;
+    text-align: right;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Ensure the show class forces the menu to display */
+  nav.show {
+    display: flex !important;
+  }
 }
